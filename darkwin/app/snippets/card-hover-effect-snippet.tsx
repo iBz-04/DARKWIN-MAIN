@@ -1,5 +1,5 @@
 import { HoverEffect } from "@/components/ui/card-hover-effect";
-import { PiAppStoreLogo, PiHeadsetFill, PiLock, PiMegaphone, PiMonitor, PiStorefront } from "react-icons/pi";
+import { PiLock, PiHeadsetFill, PiShoppingCart, PiTruck, PiDress, PiStorefront } from "react-icons/pi";
 
 export function CardHoverEffectDemo() {
   return (
@@ -10,38 +10,38 @@ export function CardHoverEffectDemo() {
 }
 export const projects = [
     {
-        icon : <div className="bg-blue-100 p-4 rounded-full"><PiMonitor className="w-8 h-8 text-blue-600" /></div>,
-        title: "Website Design",
+        icon : <div className="bg-blue-100 p-4 rounded-full"><PiDress className="w-8 h-8 text-blue-600" /></div>,
+        title: "Trendy Collections",
         description:
-          "We build fully responsive websites that look great on all devices. Our websites are designed to convert visitors into customers.",
+          "Explore our latest collections featuring the latest and most stylish clothing for every occasion.",
       
       },
       {
         icon : <div className="bg-blue-100 p-4 rounded-full"><PiStorefront className="w-8 h-8 text-blue-600" /></div>,
-        title: "E-commerce Store",
+        title: "Established Stores",
         description:
-          "From small stores to large online retailers, we have the expertise to build a store that will help you grow your business.",
+          "We offer in-person services for wholesalers, visit our stores and shop your heart away.",
        
       },
       {
+        icon : <div className="bg-blue-100 p-4 rounded-full"><PiShoppingCart className="w-8 h-8 text-blue-600" /></div>,
+        title: "Online shopping",
+        description:
+          "Shop our extensive range of women's clothing online. Enjoy seamless shopping and exclusive offers.",
+      
+      },
+      {
+        icon : <div className="bg-blue-100 p-4 rounded-full"><PiTruck className="w-8 h-8 text-blue-600" /></div>,
+        title: "Fast Shipping",
+        description:
+          "Enjoy fast and reliable shipping on all orders. Track your shipment and get your items quickly.",
+      
+      },
+      {
         icon : <div className="bg-blue-100 p-4 rounded-full"><PiLock className="w-8 h-8 text-blue-600" /></div>,
-        title: "Authentication",
+        title: "Secure Payment",
         description:
-          "Secure authentication solutions for your website or app. We use the latest technology to keep your data safe.",
-      
-      },
-      {
-        icon : <div className="bg-blue-100 p-4 rounded-full"><PiMegaphone className="w-8 h-8 text-blue-600" /></div>,
-        title: "Social Media",
-        description:
-          "We offer social media management and ad creation services. We can help you grow your social media presence and reach new customers.",
-      
-      },
-      {
-        icon : <div className="bg-blue-100 p-4 rounded-full"><PiAppStoreLogo className="w-8 h-8 text-blue-600" /></div>,
-        title: "App Development",
-        description:
-          "We build custom mobile apps for iOS and Android. Our apps are designed to be user-friendly and performant.",
+          "We offer secure payment options to ensure your shopping experience is safe and hassle-free.",
       
       },
       {
