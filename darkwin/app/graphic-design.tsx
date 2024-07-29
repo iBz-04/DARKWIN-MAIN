@@ -29,7 +29,7 @@ const GraphicDesign = () => {
             animate={{ y: 0, opacity: 1 }}
             className="px-10 md:px-0"
           >
-           <EvervaultCardSnippet />
+           {/* <EvervaultCardSnippet /> */}
             </motion.div>
 
       </div>

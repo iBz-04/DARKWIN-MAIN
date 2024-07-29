@@ -10,7 +10,7 @@ const WebsiteDesign = () => {
               Have a feel <br /> of our work
       </div>
       <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-lg text-center mx-auto px-4">
-      celebrate unique plus-size fashion style and grace with Darkwin.
+      celebrate unique women&apos;s fashion style and grace with Darkwin.
         </p>
         </div>
 
