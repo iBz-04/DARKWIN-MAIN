@@ -22,13 +22,16 @@ export function ThreeDCardExample() {
           Founded with a passion for fashion and a commitment to quality
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
-          <Image
-            src="https://res.cloudinary.com/diekemzs9/image/upload/t_new site/v1721808007/photo_5834601742224967055_y_eiabwz.jpg"
-            height="1000"
-            width="1000"
-            className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-            alt="thumbnail"
-          />
+        <video
+  src="https://res.cloudinary.com/diekemzs9/video/upload/v1721825930/Untitled_oacwj5_if2asy.mp4"
+  height="1000"
+  width="1000"
+  className="h-60 w-full object-cover rounded-xl group-hover:card:shadow-xl"
+  autoPlay
+  muted
+  loop
+  playsInline
+/>
         </CardItem>
         <div className="flex justify-between items-center mt-20">
         <a href="https://www.darkmenshop.com/en/dresses">

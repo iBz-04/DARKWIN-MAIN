@@ -39,10 +39,10 @@ const Brands = () => {
           We work with <br /> the best brands
         </div>
 
-        <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-lg text-center mx-auto">
+        <p className="mt-4 text-lg font-normal md:mb-4 lg:mb-8 xl:mb-12 2xl:mb-16 text-neutral-300 max-w-lg text-center mx-auto">
           From small businesses to large corporations, we have made partnerships with many companies.
         </p>
-
+{/* 
         <div className="grid grid-cols-3  items-center justify-center  mx-auto md:w-3/5 cursor-pointer">
           {logos.map((logo, i) => (
             <div key={i} className="p-4 md:p-20">
@@ -56,7 +56,7 @@ const Brands = () => {
               />
             </div>
           ))}
-        </div>
+        </div> */}
 
         <div
           className={cn(
@@ -64,7 +64,7 @@ const Brands = () => {
             font.className
           )}
         >
-          &quot;Our commitment to quality drives us to deliver the best  experience possible.&quot;
+          &quot;Our commitment to quality drives us to  deliver the best  experience possible.&quot;
         </div>
 
         <div className="items-center flex justify-center flex-col text-white">
@@ -78,7 +78,7 @@ const Brands = () => {
 
           <div className=" text-center">
             <div className="text-sm  font-medium pt-4">General Manager</div>
-            {/* <div className="text-sm">Marketing Director, Palium Software</div> */}
+            {/* <div className="text-sm"></div> */}
           </div>
         </div>
       </div>
