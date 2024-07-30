@@ -1,4 +1,10 @@
 "use client";
+import WebsiteDesign from "./website-design";
+import GraphicDesign from "./graphic-design";
+import ShopifyStores from "./shopify-stores";
+import Brands from "./brands";
+import Services from "./services";
+import FAQS from "./faq";
 
 import { useState } from "react";
 
@@ -11,61 +17,61 @@ import Navbar from "@/components/navbar";
 const plans = [
   {
     index: 0,
-    name: "Basic",
-    price: " US $499",
+    name: "Minimum price",
+    price: "$200",
     features: [
-      "Fully responsive on all screens",
+      "Products are warranted",
 
-      "Design + Development",
+      "Customer support",
 
-      "Private communication channel",
-      "1-3 days turnaround time",
+      "7 days return policy",
+      "Delivery in 3 business days",
     ],
     style:
       " rounded-3xl  py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
     description:
-      "Standalone components tailored to your needs and easily integrated. Perfect for website elements or sections.",
-    button: "Buy Now",
+      "Complete your online purchase with a minimum order total of amount specified above.",
+    button: "Shop Now",
   },
-  {
-    index: 1,
-    name: "Premium",
-    price: "US $1299",
-    features: [
-      "Fully responsive on all screens",
-      "React / Next.js / Tailwind CSS code",
-      "Design + Development",
-      "24-hour support response time",
-      "Private communication channel",
-      "3-5 days turnaround time",
-    ],
-    style:
-      " rounded-3xl  py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
-    description:
-      "Best for early-stage startups, businesses, and freelancers that need a marketing side to showcase their work and vision.",
-    button: "Buy Now",
-  },
-  {
-    index: 2,
-    name: "Enterprise",
-    feature: "Contact Us",
-    price: "Let's Talk!",
-    features: [
-      "Fully responsive on all screens",
-      "React / Next.js / Tailwind CSS code",
-      "Design + Development",
-      "Unlimited Revisions",
-      "24-hour support response time",
-      "Private communication channel",
-      "Priority Development Queue",
-      "Dedicated Project Manager",
-    ],
-    style:
-      " h-full rounded-3xl py-10 flex flex-col  bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50  ",
-    description:
-      "Best for small businesses and startups that need a performant website that looks great and converts visitors to customers.",
-    button: "Contact Us",
-  },
+  // {
+  //   index: 1,
+  //   name: "Premium",
+  //   price: "US $1299",
+  //   features: [
+  //     "Fully responsive on all screens",
+  //     "React / Next.js / Tailwind CSS code",
+  //     "Design + Development",
+  //     "24-hour support response time",
+  //     "Private communication channel",
+  //     "3-5 days turnaround time",
+  //   ],
+  //   style:
+  //     " rounded-3xl  py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
+  //   description:
+  //     "Best for early-stage startups, businesses, and freelancers that need a marketing side to showcase their work and vision.",
+  //   button: "Buy Now",
+  // },
+  // {
+  //   index: 2,
+  //   name: "Enterprise",
+  //   feature: "Contact Us",
+  //   price: "Let's Talk!",
+  //   features: [
+  //     "Fully responsive on all screens",
+  //     "React / Next.js / Tailwind CSS code",
+  //     "Design + Development",
+  //     "Unlimited Revisions",
+  //     "24-hour support response time",
+  //     "Private communication channel",
+  //     "Priority Development Queue",
+  //     "Dedicated Project Manager",
+  //   ],
+  //   style:
+  //     " h-full rounded-3xl py-10 flex flex-col  bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50  ",
+  //   description:
+  //     "Best for small businesses and startups that need a performant website that looks great and converts visitors to customers.",
+  //   button: "Contact Us",
+  // },
 ];
 
 const Pricing = () => {
@@ -84,16 +90,16 @@ const Pricing = () => {
 
 <div className="flex items-center justify-center flex-col   ">
           <div className="text-5xl pb-10 md:pb-20 text-slate-300 px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-500 bg-opacity-50">
-            Simple Pricing <br /> Choose your plan
+            Simple Pricing <br /> made for you!
           </div>
-          <div className="grid md:grid-cols-3 gap-6 px-6 md:w-4/5 2xl:w-3/4 cursor-pointer pb-20  items-start ">
+          <div className="flex justify-center items-center px-6 md:w-4/5 2xl:w-3/4 cursor-pointer pb-20 mx-auto ">
             {plans.map((plan, index) => (
               <div
                 key={plan.name}
                 className="h-full flex flex-col justify-between border rounded-3xl px-6  "
               >
                 <div className={plan.style}>
-                  <div className="text-4xl flex  items-center font-medium">
+                  <div className="text-4xl flex  items-center font-medium justify-center md:justify-center lg:justify-center">
                     {plan.name}
                     {/* render feature tag only for enterprise tab*/}
                     {plan.feature === "Contact Us" && (
@@ -127,10 +133,10 @@ const Pricing = () => {
                 <div className={plan.button}>
                   {index === 0 && (
                     <Link
-                      href="https://buy.stripe.com/6oEg1WdsibFr1EYbIK"
+                      href="https://www.darkmenshop.com/"
                       className="rounded-3xl my-4  py-2 text-white w-full mx-auto items-center flex justify-center bg-gradient-to-r from-emerald-500 to-blue-300"
                     >
-                      Buy Now
+                      Shop now
                     </Link>
                   )}
                     {index === 1 && (
