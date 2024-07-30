@@ -51,11 +51,12 @@ const FormSchema = z.object({
     "Other",
   ]),
   services: z.enum([
-    "Mobile App Develoment",
-    "Social Media Marketing",
-    "UI/UX Design",
-    "Branding",
-    "Website Development",
+    "Dresses",
+    "Tunics",
+    "Pants/skirts",
+    "Jackets",
+    "Blouses",
+    "Leggings",
   ]),
   info: z.string(),
 });
@@ -123,12 +124,22 @@ export default function ContactForm() {
   return (
     <div className=" w-full   md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden ">
       <Navbar
-        scrollToWebsiteDesign={() => {}}
-        scrollToGraphicDesign={() => {}}
-        scrollToShopifyStores={() => {}}
-        scrollToBrands={() => {}}
-        scrollToServices={() => {}}
-      />
+  scrollToWebsiteDesign={() => {
+    window.location.href = '/';
+  }}
+  scrollToGraphicDesign={() => {
+    window.location.href = '/';
+  }}
+  scrollToShopifyStores={() => {
+    window.location.href = '/';
+  }}
+  scrollToBrands={() => {
+    window.location.href = '/';
+  }}
+  scrollToServices={() => {
+    window.location.href = '/';
+  }}
+/>
       <div className="md:flex items-start justify-center md:py-20 px-6">
         <div className="">
           <div className="text-5xl font-medium  w-full md:w-2/3  pb-5 md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
@@ -141,14 +152,13 @@ export default function ContactForm() {
               text-gray-300
                     "
           >
-            Let&apos;s talk about how Bird can help your team work better.
+            Communicate with Darkwin
           </div>
 
           <div className="bg-[#f6f5f4] md:w-4/5 space-y-6 p-4 rounded-2xl my-4 hidden md:flex md:flex-col">
             <div className="flex gap-4 border-b ">
               <div className=" font-normal pb-4 ">
-                One flexible agency for your entire company to share knowledge,
-                ship projects, and collaborate.
+                One dedicated team is ready to help you in anyway
               </div>
             </div>
 
@@ -299,11 +309,11 @@ export default function ContactForm() {
                       <SelectContent>
                         <div className="flex gap-4">
                           <SelectItem value="Evaluate Bird for my company">
-                            Evaluate Bird for my company
+                            file a complaint
                           </SelectItem>
                         </div>
                         <SelectItem value="Learn More">Learn More</SelectItem>
-                        <SelectItem value="Get a Quote">Get a Quote</SelectItem>
+                        <SelectItem value="Get a Quote">Give feedback</SelectItem>
 
                         <SelectItem value="Other">Other</SelectItem>
                       </SelectContent>
@@ -340,8 +350,7 @@ export default function ContactForm() {
                   />
                 </div>
                 <div className="text-xs font-light  md:w-3/4 mb-1 bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
-                  I agree to Bird&apos; sending marketing communications related
-                  to bird
+                  I agree to all policies
                 </div>
               </div>
 

@@ -1,10 +1,4 @@
 "use client";
-import WebsiteDesign from "./website-design";
-import GraphicDesign from "./graphic-design";
-import ShopifyStores from "./shopify-stores";
-import Brands from "./brands";
-import Services from "./services";
-import FAQS from "./faq";
 
 import { useState } from "react";
 
@@ -81,12 +75,22 @@ const Pricing = () => {
      bg-grid-white/[0.02] relative overflow-hidden">
 
 <Navbar
-             scrollToWebsiteDesign={() => {}}
-             scrollToGraphicDesign={() => {}}
-             scrollToShopifyStores={() => {}}
-             scrollToBrands={() => {}}
-              scrollToServices={() => {}}
-      />
+  scrollToWebsiteDesign={() => {
+    window.location.href = '/';
+  }}
+  scrollToGraphicDesign={() => {
+    window.location.href = '/';
+  }}
+  scrollToShopifyStores={() => {
+    window.location.href = '/';
+  }}
+  scrollToBrands={() => {
+    window.location.href = '/';
+  }}
+  scrollToServices={() => {
+    window.location.href = '/';
+  }}
+/>
 
 <div className="flex items-center justify-center flex-col   ">
           <div className="text-5xl pb-10 md:pb-20 text-slate-300 px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-500 bg-opacity-50">
