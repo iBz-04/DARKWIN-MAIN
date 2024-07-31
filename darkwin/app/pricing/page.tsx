@@ -8,6 +8,8 @@ import { PiCheckCircleFill } from "react-icons/pi";
 
 import Navbar from "@/components/navbar";
 
+import Footer from "../footer"
+
 const plans = [
   {
     index: 0,
@@ -166,7 +168,7 @@ const Pricing = () => {
             ))}
           </div>
         </div>
-
+   <Footer />
   </div>
   )
 };

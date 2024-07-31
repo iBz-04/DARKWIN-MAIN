@@ -10,6 +10,8 @@ import * as z from "zod";
 
 import { Checkbox } from "@/components/ui/checkbox";
 
+import Footer from "../footer"
+
 import {
   Select,
   SelectContent,
@@ -45,18 +47,18 @@ const FormSchema = z.object({
   job_title: z.string(),
   company_name: z.string(),
   help: z.enum([
-    "Evaluate Bird for my company",
+    "File a complaint",
     "Learn More",
-    "Get a Quote",
+    "Give feedback",
     "Other",
   ]),
   services: z.enum([
-    "Dresses",
-    "Tunics",
-    "Pants/skirts",
-    "Jackets",
-    "Blouses",
-    "Leggings",
+    "Shopping Assistance",
+    "Custom Designs",
+    "Styling Consultation",
+    "Seasonal Collections",
+    "Collaborations",
+    "Wholesale Orders",
   ]),
   info: z.string(),
 });
@@ -67,13 +69,13 @@ type FormValues = {
   email: string;
   job_title: string;
   company_name: string;
-  help: "Evaluate Bird for my company" | "Learn More" | "Get a Quote" | "Other";
+  help: "File a complaint" | "Learn More" | "Give feedback" | "Other";
   services:
-    | "Mobile App Develoment"
-    | "Social Media Marketing"
-    | "UI/UX Design"
-    | "Branding"
-    | "Website Development";
+    | "Shopping Assistance"
+    | "Custom Designs"
+    | "Styling Consultation"
+    | "Seasonal Collections"
+    | "Collaborations";
   info: string;
   terms: boolean;
 };
@@ -92,7 +94,7 @@ export default function ContactForm() {
       job_title: "",
       company_name: "",
       help: "Learn More",
-      services: "Mobile App Develoment",
+      services: "Shopping Assistance",
       info: "",
     },
   });
@@ -164,14 +166,13 @@ export default function ContactForm() {
 
             <div className="flex gap-4 border-b ">
               <div className=" font-normal pb-4 ">
-                Enterprise features to securely manage user access and security.
+              Comprehensive Solutions to Ensure Secure User Access and Data Protection
               </div>
             </div>
 
             <div className="flex gap-4  ">
               <div className=" font-normal pb-4 ">
-                Dedicated support to work with you on your setup and help you
-                build the best plan for your company.
+              Personalized Support to Assist with Your Setup and Develop Optimal Strategies for Your Business
               </div>
             </div>
           </div>
@@ -272,14 +273,14 @@ export default function ContactForm() {
                       </FormControl>
                       <SelectContent>
                         <div className="flex gap-4">
-                          <SelectItem value="Mobile App Develoment">
-                          Mobile App Develoment
+                          <SelectItem value="Shopping Assistance">
+                          Shopping Assistance
                           </SelectItem>
                         </div>
-                        <SelectItem value="Social Media Marketing">Social Media Marketing</SelectItem>
-                        <SelectItem value="51-200">51-200</SelectItem>
-                        <SelectItem value="501-1000">501-1000</SelectItem>
-                        <SelectItem value="1000+">1000+</SelectItem>
+                        <SelectItem value="Social Media Marketing">Custom Designs</SelectItem>
+                        <SelectItem value="51-200">Styling Consultation</SelectItem>
+                        <SelectItem value="501-1000">Seasonal Collections</SelectItem>
+                        <SelectItem value="1000+">Collaborations</SelectItem>
                       </SelectContent>
                     </Select>
                   </FormItem>
@@ -309,7 +310,7 @@ export default function ContactForm() {
                       <SelectContent>
                         <div className="flex gap-4">
                           <SelectItem value="Evaluate Bird for my company">
-                            file a complaint
+                          file a complaint
                           </SelectItem>
                         </div>
                         <SelectItem value="Learn More">Learn More</SelectItem>
@@ -400,6 +401,7 @@ export default function ContactForm() {
           )}
         </Form>
       </div>
+      <Footer />
     </div>
   );
 }
