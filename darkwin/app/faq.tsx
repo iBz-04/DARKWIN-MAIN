@@ -28,7 +28,7 @@ const FAQS = () => {
       </AccordionContent>
     </AccordionItem>
     <AccordionItem value="item-2">
-      <AccordionTrigger>How to shop online ?</AccordionTrigger>
+      <AccordionTrigger>Online Shopping?</AccordionTrigger>
       <AccordionContent>
         You can start by visiting our online shop at <a href="https://www.darkmenshop.com/"><b>darkmenshop.com</b></a>
       </AccordionContent>
