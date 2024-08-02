@@ -68,7 +68,7 @@ const plans = [
 
 const Pricing = () => {
   return (
-    <div className="w-full md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+    <div className="h-screen w-full md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-auto">
       <Navbar
         scrollToWebsiteDesign={() => {
           window.location.href = "/";
@@ -87,7 +87,7 @@ const Pricing = () => {
         }}
       />
 
-      <div className="flex items-center justify-center flex-col">
+      <div className=" flex items-center justify-center flex-col">
         <div className="text-5xl pb-10 md:pb-20 text-slate-300 px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-500 bg-opacity-50">
           Simple Pricing <br /> made for you!
         </div>
@@ -152,6 +152,7 @@ const Pricing = () => {
             </div>
           ))}
         </div>
+  
       </div>
       <Footer />
     </div>

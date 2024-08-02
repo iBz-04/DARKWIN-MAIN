@@ -124,7 +124,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div className=" w-full   md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden ">
+    <div className="h-screen w-full   md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-auto ">
       <Navbar
   scrollToWebsiteDesign={() => {
     window.location.href = '/';
@@ -391,7 +391,7 @@ export default function ContactForm() {
                 <div className="w-80 py-20">
                   <PiSmiley className="text-6xl text-[#6c6684] mx-auto" />
 
-                  <div className="text-gray-500 font-light  text-center justify-center mx-auto py-10">
+                  <div className="h-screen text-gray-500 font-light  text-center justify-center mx-auto py-10">
                     We&apos;ve received your inquiry and will be contacting you
                     via email shortly.
                   </div>
@@ -400,6 +400,7 @@ export default function ContactForm() {
             </>
           )}
         </Form>
+       
       </div>
       <Footer />
     </div>
