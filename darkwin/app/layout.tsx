@@ -1,5 +1,5 @@
 
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react"
 
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
@@ -27,7 +27,7 @@ export default function RootLayout({
       
       suppressHydrationWarning={true}
       className={font.className}>
-        <Analytics />
+         <Analytics/>
         {children}
         
         </body>
